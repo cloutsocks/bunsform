@@ -38,8 +38,11 @@ const handleSubmit = (e) => {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString()
-    }).then(() => console.log('Form successfully submitted')).catch((error) =>
-        alert(error))
+    }).then(() => {
+        console.log('Form successfully submitted');
+        document.querySelector("#input").innerHTML = `<p>Thank you! Your commission request was submitted.</p>
+        <p>Once your commission is accepted, I will email you with my paypal information. You should have received a confirmation email at the address provided as well.</p>`;
+    }).catch((error) => alert(error));
 }
 
 function validateForm() {
