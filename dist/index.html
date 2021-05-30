@@ -38,13 +38,13 @@
                     <form id="form" name="commission" method="POST" data-netlify="true">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="email" type="email" class="validate" required>
+                                <input id="email" type="email" name="email" class="validate" required>
                                 <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="policy" type="text" required>
+                                <input id="policy" type="text" name="policy verify" required>
                                 <label for="policy">Have you read my payment policy above?</label>
                                 <span class="helper-text"
                                     data-error="Please review the payment policy at the top of the page"
@@ -53,17 +53,17 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="name" type="text">
+                                <input id="name" name="name" type="text">
                                 <label for="name">Name</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="contact_method" type="text" required>
+                                <input id="contact_method" name="contact method" type="text" required>
                                 <label for="contact_method">Contact Method</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="description" class="materialize-textarea"></textarea>
+                                <textarea id="description" name="description" class="materialize-textarea"></textarea>
                                 <label for="description">Commission Description</label>
                             </div>
                         </div>
