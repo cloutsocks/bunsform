@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buns' NSFW Commissions</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="main col s12 m8 offset-m1 xl7 offset-xl1">
+                <div id="input">
+                    <h3 class="header">Buns' NSFW Commissions</h3>
+                    <p>Hi! Please be sure to <a href="https://coffeestains69.carrd.co/#tos" target="_blank"
+                            rel="noopener noreferrer">read my TOS
+                            on my carrd</a> before filling this form out!
+                    </p>
+                    <p>Payment policy: Once I accept your commission, I will email you with my paypal information.</p>
+                    <p>I require 50% payment <strong>UPFRONT</strong>, and the other 50% payment
+                        once the sketch is finalized. If you are getting a sketch commission I require 100% payment
+                        <strong>UPFRONT</strong>! If
+                        you understand this, please respond with <code>yes pineapple</code> to the first question (after
+                        the email
+                        request).
+                    </p>
+                    <form id="form" name="commission" method="POST" data-netlify="true">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="policy" type="text" required>
+                                <label for="policy">Have you read my payment policy above?</label>
+                                <span class="helper-text"
+                                    data-error="Please review the payment policy at the top of the page"
+                                    data-success="Thank you!"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="name" type="text">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="contact_method" type="text" required>
+                                <label for="contact_method">Contact Method</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="description" class="materialize-textarea"></textarea>
+                                <label for="description">Commission Description</label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light pink lighten-4" type="submit" name="action">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
