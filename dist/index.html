@@ -31,26 +31,9 @@
                     <p>I require 50% payment <strong>UPFRONT</strong>, and the other 50% payment
                         once the sketch is finalized. If you are getting a sketch commission I require 100% payment
                         <strong>UPFRONT</strong>! If
-                        you understand this, please respond with <code>yes pineapple</code> to the first question (after
-                        the email
-                        request).
+                        you understand this, please respond with <code>yes pineapple</code> to the payment policy question.
                     </p>
                     <form id="form" name="commission" method="POST" data-netlify="true">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" name="email" class="validate" required>
-                                <label for="email">Email</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="policy" type="text" name="policy verify" required>
-                                <label for="policy">Have you read my payment policy above?</label>
-                                <span class="helper-text"
-                                    data-error="Please review the payment policy at the top of the page"
-                                    data-success="Thank you!"></span>
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="input-field col s6">
                                 <input id="name" name="name" type="text">
@@ -63,8 +46,23 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
+                                <input id="email" type="email" name="email" class="validate" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
                                 <textarea id="description" name="description" class="materialize-textarea"></textarea>
                                 <label for="description">Commission Description</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="policy" type="text" name="policy verify" required>
+                                <label for="policy">Have you read my payment policy above?</label>
+                                <span class="helper-text"
+                                    data-error="Please review the payment policy at the top of the page"
+                                    data-success="Thank you!"></span>
                             </div>
                         </div>
                         <button class="btn waves-effect waves-light pink lighten-4" type="submit"
